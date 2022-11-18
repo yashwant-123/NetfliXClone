@@ -5,7 +5,19 @@ import { useEffect,useState } from 'react';
 
 
 const  Nav =()=> {
-    return (<nav>
+
+  const [show,changeshow]=useState(false);
+  const handlescroll=()=>{
+   if(window.scrollY>10) changeshow(true);
+   else changeshow(false);
+  };
+
+  useEffect(()=>{
+    window.addEventListener('scroll',handlescroll);
+  },[])
+
+
+    return (<nav style={{backgroundColor : show ? "rgb(20,20,20)" : "transparent"}}>
         <section>
             <div className='navleft'>
                 <img className='logo' src='/logo.png' />
