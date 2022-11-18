@@ -1,12 +1,14 @@
 
 import React, { Component } from 'react';
 import './Nav.css';
+import { useEffect,useState } from 'react';
+
 
 const  Nav =()=> {
     return (<nav>
         <section>
             <div className='navleft'>
-                <img className='logo' src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png' />
+                <img className='logo' src='/logo.png' />
                 <div className='navlinks'>
                     <a href='/'>Home</a>
                     <a href='/'>TV shows</a>

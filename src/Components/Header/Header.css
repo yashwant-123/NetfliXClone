@@ -1,0 +1,88 @@
+header{
+    height: 100vh;
+    background-image:url('./img1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header img{
+    object-fit: cover;
+}
+.content_b{
+    margin-left: 10rem;
+    padding-top: 10rem;
+}
+.billboard{
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+
+}
+.header_inner_shadow {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(50, 50, 50, 1) 0%, rgb(50, 50, 50, 0) 100%),
+        linear-gradient(180deg, rgb(50, 50, 50, 0.7) 0%, rgb(50, 50, 50, 0) 100%)
+}
+
+h4{
+    z-index: 2;
+    width: 50%;
+    color: white;
+    font-size: larger;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin-bottom: 0.2vw;
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+    z-index: 2;
+    position: relative;
+   
+}
+.button{
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    padding: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.button svg {
+    margin-right: 0.4rem;
+}
+
+.play {
+    background-color: #fff;
+    margin-right: 1rem;
+}
+
+.play:hover {
+    background-color: #e6e6e6;
+}
+
+.moreinfo {
+    background-color: rgba(30, 30, 30, 0.644);
+    color: #fff;
+}
+
+.moreinfo :hover {
+    background-color: rgba(30, 30, 30, 0.8);
+}
