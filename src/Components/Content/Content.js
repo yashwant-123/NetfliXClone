@@ -6,7 +6,7 @@ import Row from '../Row/Row';
 function Content(){
 
     return(
-       <div>
+       <div className='Content'>
         {RowData.map((el)=>{
             return <Row title={el.title} url={el.url} />
         })}
