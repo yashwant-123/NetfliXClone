@@ -37,8 +37,6 @@ function Card(props) {
     fetchURL();
   }, []);
 
-  const vid =`${youtubeUrl}${video}`
-  console.log(vid);
 
   return (
     <>
@@ -48,16 +46,10 @@ function Card(props) {
         
       <img className='image' src={imgaeurl} alt='poster' />
     ) : (
-        
-      <ReactPlayer
-      
-      url={vid}
-      playing={true}
-      width ='300px'
-      height= '200px'
-    />
-
-
+      <div >
+        <img className='imager' src={imgaeurl} alt='poster' />
+        <p className="props">{props.title}</p>
+        </div>
     )
     
     }

@@ -4,3 +4,15 @@
     object-fit: contain;
     margin-right: 10px;
 }
+.props{
+    height: 130px;
+    width: 130px;
+    color: brown;
+}
+
+.imager{
+    height: 130px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-right: 10px;
+}
