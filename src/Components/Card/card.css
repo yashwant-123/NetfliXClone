@@ -2,14 +2,26 @@
     height: 130px;
     border-radius: 5px;
     object-fit: contain;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .props{
-    height: 100px;
-    width: 231px;
+    height: 120px;
+    width: 226px;
     color: brown;
-    margin-top: 6rem;
+    max-width:231px;
+    word-wrap:break-word;
     text-align: center;
-    text-overflow: ellipsis;
+    border: 1px solid blue;
+    
+    white-space: nowrap;
+    
+}
+.divp{
+    max-width: 231px;
+}
+p{
+    max-width:200px;
+    word-wrap:break-word;
 }
 
