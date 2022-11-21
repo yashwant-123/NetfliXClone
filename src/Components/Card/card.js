@@ -46,8 +46,7 @@ function Card(props) {
         
       <img className='image' src={imgaeurl} alt='poster' />
     ) : (
-      <div >
-        <img className='imager' src={imgaeurl} alt='poster' />
+      <div className="divp">
         <p className="props">{props.title}</p>
         </div>
     )

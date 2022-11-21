@@ -5,14 +5,11 @@
     margin-right: 10px;
 }
 .props{
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 231px;
     color: brown;
+    margin-top: 6rem;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 
-.imager{
-    height: 130px;
-    border-radius: 5px;
-    object-fit: contain;
-    margin-right: 10px;
-}
