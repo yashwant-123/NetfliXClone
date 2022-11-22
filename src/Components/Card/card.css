@@ -6,19 +6,24 @@
     margin-left: 5px;
 }
 .props{
-    height: 120px;
-    width: 226px;
-    color: brown;
-    max-width:231px;
+    max-width:200px;
+    margin-top:80px;
+    width: 200px;
     word-wrap:break-word;
-    text-align: center;
-    border: 1px solid blue;
-    
-    white-space: nowrap;
     
 }
-.divp{
+.dip{
     max-width: 231px;
+    height: 130px;
+    width: 231px;
+    color: brown;
+    word-wrap:break-word;
+    text-align: center;
+
+    
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 p{
     max-width:200px;

@@ -46,7 +46,9 @@ function Card(props) {
         
       <img className='image' src={imgaeurl} alt='poster' />
     ) : (
+        <div className="dip">
         <p className="props">{props.title}</p>
+        </div>
     )
     
     }
