@@ -8,9 +8,10 @@ function Row(props) {
   const getmovies = async () => {
     const api_d = await axios.get(props.url);
     setmovies(api_d.data.results);
+    
   }; 
 
-
+  
   useEffect(() => {
     getmovies();
   }, []);

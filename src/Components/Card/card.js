@@ -5,11 +5,12 @@ import ReactPlayer from "react-player";
 
 import "./card.css";
 
+
 function Card(props) {
   const imgaeurl = `https://image.tmdb.org/t/p/original/${props.poster}`;
-  const [video, setVideo] = useState("");
+  const [video, setVideo] = useState(props.title);
   const [isHovered, setIsHovered] = useState(false);
-  const youtubeUrl = `https://www.youtube.com/watch?v=_pAmhY0siWM`;
+  const youtubeUrl = `https://www.youtube.com/embed/`;
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -25,7 +26,8 @@ function Card(props) {
               append_to_response: 'videos',
             },
           });
-          if (response.data.videos.results.lenght > 0) {
+          console.log(response);
+          if (response.data.videos.results.length > 0) {
             setVideo(response.data.videos.results[0].key);
           }
     } catch (e) {
@@ -37,7 +39,8 @@ function Card(props) {
     fetchURL();
   }, []);
 
-
+  var src=`${youtubeUrl}${video}`;
+  console.log(src);
   return (
     <>
     
@@ -46,9 +49,15 @@ function Card(props) {
         
       <img className='image' src={imgaeurl} alt='poster' />
     ) : (
-        <div className="dip">
-        <p className="props">{props.title}</p>
-        </div>
+      <iframe className="iframe" 
+      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+      allowfullscreen
+      title='YouTube video player'
+      width='240px'
+      height='95px'
+      frameborder='0'
+      src={`${youtubeUrl}${video}`}
+    ></iframe>
     )
     
     }
