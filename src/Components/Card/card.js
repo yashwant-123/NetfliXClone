@@ -54,7 +54,7 @@ function Card(props) {
       allowfullscreen
       title='YouTube video player'
       width='240px'
-      height='95px'
+      height='130px'
       frameborder='0'
       src={`${youtubeUrl}${video}`}
     ></iframe>

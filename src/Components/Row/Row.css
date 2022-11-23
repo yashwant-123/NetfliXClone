@@ -25,3 +25,7 @@
 .row_card::-webkit-scrollbar {
     display: none;
 }
+
+.row_card :hover > .row_wrapper{
+    height: 200px;
+}
